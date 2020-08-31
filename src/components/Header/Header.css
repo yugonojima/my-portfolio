@@ -1,0 +1,21 @@
+.header {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+}
+
+.header-left {
+  width: 170px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header-right {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

@@ -1,38 +1,38 @@
-.App {
-  text-align: center;
+.top {
+  margin: 0;
+  background-image: url(./images/ocean.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 800px;
+  background-attachment: fixed;
+
+  /*  */
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.About-area {
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 100%;
+  height: 600px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Thought-area {
+  background-color: skyblue;
+  overflow: hidden;
+  width: 100%;
+  height: 600px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Works-area {
+  background-color: rgb(240, 163, 221);
+  overflow: hidden;
+  width: 100%;
+  height: 600px;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Contact-area {
+  background-color: rgb(238, 236, 128);
+  overflow: hidden;
+  width: 100%;
+  height: 600px;
 }
