@@ -1,38 +1,97 @@
 .top {
   margin: 0;
-  background-image: url(../../images/ocean.jpg);
-  background-color: rgba(255,255,255,0.4);
-  background-blend-mode: lighten;
+  background-image: url(../../images/desk.jpg);
   background-size: cover;
   width: 100%;
   height: 800px;
   background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top > p {
+  font-size: 2rem;
+
+  animation-name: fade-in-name;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-in-name {
+  0% {
+    opacity: 0;
+    transform: translate3d(-50px, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.Area {
+  width: 100%;
+  height: 900px;
+
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.Area-container {
+  text-align: center;
+}
+
+.Area-container > h3 {
+  display: inline-block;
+  position: relative;
+  margin-top: 200px;
+  font-size: 2.5rem;
+}
+
+.Area-container > h3::after {
+  content: "";
+  position: absolute;
+  left: 13px;
+  right: 13px;
+  bottom: -13px;
+  border-bottom: 10px solid #333;
 }
 
 
+
+
+.Area-container > p {
+  margin-top: 90px;
+  margin-bottom: 90px;
+  font-size: 1.2rem;
+line-height: 40px;
+}
+
 .About-area {
-  background-color: #ffffff;
   overflow: hidden;
-  width: 100%;
-  height: 600px;
+  
 }
 
 .Thought-area {
-  background-color: skyblue;
-  overflow: hidden;
-  width: 100%;
-  height: 600px;
+  background-image: url(../../images/desk.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  
 }
 
 .Works-area {
-  background-color: rgb(240, 163, 221);
   overflow: hidden;
-  width: 100%;
-  height: 600px;
+  
 }
 .Contact-area {
-  background-color: rgb(238, 236, 128);
+  background-image: url(../../images/desk.jpg);
+  background-attachment: fixed;
+  background-size: cover;
   overflow: hidden;
-  width: 100%;
-  height: 600px;
+  
 }

@@ -1,9 +1,9 @@
 import React, { useContext, useEffect, useState } from "react";
 import "./Header.css";
+import Home from "../Home/Home";
 import { HashRouter as Router, Link, Switch, Route } from "react-router-dom";
 import Button from "@material-ui/core/Button";
 import About from "../About/About";
-import Home from "../Home/Home";
 import Thought from "../Thought/Thought";
 import Works from "../Works/Works";
 import Contact from "../Contact/Contact";
@@ -11,7 +11,7 @@ import Contact from "../Contact/Contact";
 const Header = () => {
   return (
     <Router>
-      <header className="header">
+      <header className="header" >
         <div className="header-left">
           <a>JPN</a>
           <a>ENG</a>
@@ -45,7 +45,6 @@ const Header = () => {
           </Link>
         </div>
       </header>
-
       <Switch>
         <Route exact path="/" component={Home}>
           <Home></Home>
