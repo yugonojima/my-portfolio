@@ -1,14 +1,23 @@
 import React from "react";
 import "./Home.css";
 import SwichButton from "../Button";
+import ContactArea from "./Contact-Area";
 
 const Home = () => {
   return (
     <>
       <div id="top" className="top">
-        <p>野島 佑悟</p>
+        <div className="top-container">
+          <p>野島 佑悟</p>
+        </div>
       </div>
       <div className="Area ">
+        <div className="picture-container">
+          <div className="picture1">あ</div>
+          <div className="picture2">い</div>
+          <div className="picture3">う</div>
+        </div>
+
         <div className="Area-container">
           <h3 className="Area-title"> About Me</h3>
 
@@ -42,17 +51,7 @@ const Home = () => {
           <SwichButton route="Works" color="outline-info"></SwichButton>
         </div>
       </div>
-      <div className="Area Contact-area">
-        <div className="Area-container">
-          <h3>Contact</h3>
-          <p>
-            コンタクトフォームがあるのでそちらからお問い合わせください。
-            <br></br>
-            TwitterやInstagramのDMからも返信できます。
-          </p>
-          <SwichButton route="Contact" color="outline-secondary"></SwichButton>
-        </div>
-      </div>
+      <ContactArea />
     </>
   );
 };

@@ -1,0 +1,73 @@
+.About-top {
+  margin: 0;
+  background-image: url(../../images/desk.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 800px;
+  background-attachment: fixed;
+}
+
+.About-top-container {
+  width: 20%;
+  position: relative;
+  top: 40%;
+  left: 40%;
+  text-align: center;
+}
+
+.About-top-container > h3 {
+  font-size: 4rem;
+}
+
+/*About-body*/
+
+.About-body {
+  
+  
+  text-align: center;
+}
+
+.About-body-title {
+  margin: 100px auto 0;
+  position: relative;
+  width: 20%;
+  
+  /* top: 50px;
+  left: 42%;
+  width: 15%;  */
+ 
+}
+
+.About-body-title > h4::after {
+  content: "";
+  position: absolute;
+  left: 30%;
+  right: 30%;
+  bottom: -20%;
+  border-bottom: 10px solid #333;
+}
+
+.About-body-text {
+  margin-top: 120px;
+}
+
+.About-body-text > p {
+  margin-bottom: 50px;
+}
+
+
+
+.About-skills-icons {
+  margin:10% auto 20%;
+  width: 80%;
+  
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.About-skill-icon > p{
+  margin: 0;
+  font-size: 22px;
+}
+
