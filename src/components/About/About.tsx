@@ -5,9 +5,8 @@ import { DiCss3 } from "react-icons/di";
 import { BsFillBootstrapFill } from "react-icons/bs";
 import { DiJavascript1 } from "react-icons/di";
 import { FaReact } from "react-icons/fa";
-import { SiRedux,SiMaterialUi } from "react-icons/si";
+import { SiRedux, SiMaterialUi } from "react-icons/si";
 import ContactArea from "../Home/Contact-Area";
-
 
 const About = () => {
   return (
@@ -35,7 +34,11 @@ const About = () => {
               海が好きな学生が多いので、友達とはたまにダイビングや釣りをしに行ったりしています。
               <br></br>
               よかったら大学のホームページも見てみてください →
-              <a href="https://www.kaiyodai.ac.jp/" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.kaiyodai.ac.jp/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 大学ホームページ
               </a>
             </p>
@@ -87,8 +90,8 @@ const About = () => {
             </div>
           </div>
         </div>
-        <ContactArea></ContactArea>
       </div>
+      <ContactArea></ContactArea>
     </>
   );
 };
