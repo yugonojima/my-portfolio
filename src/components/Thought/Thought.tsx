@@ -24,7 +24,7 @@ const Thought = () => {
             </p>
           </div>
           <div className="About-body-title">
-            <p>study every day</p>
+            <p>studying</p>
             <h4>Future</h4>
           </div>
           <div className="About-body-text">

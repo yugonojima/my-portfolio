@@ -12,3 +12,18 @@ img {
 .Works-body-text > p {
   margin-bottom: 60px;
 }
+
+.Works-body-title {
+  margin-top: 100px;
+  position: relative;
+  
+}
+
+.Works-body-title > h4::after {
+  content: "";
+  position: absolute;
+  left: 47%;
+  right: 47%;
+  bottom: -50%;
+  border-bottom: 10px solid #333;
+}

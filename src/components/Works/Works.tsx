@@ -2,6 +2,7 @@ import React from "react";
 import ContactArea from "../Home/Contact-Area";
 import "./Works.css";
 import DogIcon from "../../images/dog.png";
+import './Works.css'
 
 const Works = () => {
   return (
@@ -14,7 +15,7 @@ const Works = () => {
       </div>
       <div className="About-body">
         <div className="About-container1">
-          <div className="About-body-title">
+          <div className="Works-body-title">
             <h4>Works</h4>
           </div>
           <img src={DogIcon} alt="Dog appreciate image"></img>

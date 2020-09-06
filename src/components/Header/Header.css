@@ -21,3 +21,29 @@
   justify-content: space-around;
   align-items: center;
 }
+
+/* メニューバーの CSS */
+.open,
+.close {
+  display: none;
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  left: -50vw;
+}
+
+@media screen and (max-width: 1000px) {
+  .header-right {
+   display: none;
+  }
+
+  .open,
+  .close {
+    display: block;
+  }
+  .open {
+    position: absolute;
+    left: 0;
+  }
+}

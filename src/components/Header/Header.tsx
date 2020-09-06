@@ -7,11 +7,16 @@ const Header = () => {
   return (
     <Router>
       <header className="header">
-        <div className="header-left">
-          <a>JPN</a>
-          <a>ENG</a>
-        </div>
-
+        <input id="menu" type="checkbox"></input>
+        <label htmlFor="menu" className="open">
+          ○
+        </label>
+        <label htmlFor="menu" className="back"></label>
+        <aside>
+          <label htmlFor="menu" className="close">
+            ✖︎
+          </label>
+        </aside>
         <div className="header-right">
           <Link to="/" style={{ textDecoration: "none" }}>
             <Button variant="outlined" color="secondary">

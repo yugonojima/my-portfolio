@@ -16,8 +16,12 @@ const ContactArea = () => {
           </p>
           <SwichButton route="Contact" color="outline-secondary"></SwichButton>
           <div className="icon-container">
-            <TwitterIcon style={{ fontSize: 50 }}></TwitterIcon>
-            <InstagramIcon style={{ fontSize: 50 }}></InstagramIcon>
+            <a href="https://twitter.com/NojimaYugo" target="_blank">
+              <TwitterIcon style={{ fontSize: 50 }}></TwitterIcon>
+            </a>
+            <a href="https://www.instagram.com/yugonem1/" target="_blank">
+              <InstagramIcon style={{ fontSize: 50 }} color="secondary"></InstagramIcon>
+            </a>
           </div>
         </div>
       </div>

@@ -1,3 +1,7 @@
+p {
+  font-family: 'ヒラギノ明朝 ProN W3' ,'MS UI Gothic',sans-serif;
+
+}
 .About-top {
   margin: 0;
   background-image: url(../../images/desk.jpg);
@@ -8,8 +12,8 @@
 }
 
 .About-top-container {
-  width: 20%;
-  margin: 0 auto ;
+  width: 40%;
+  margin: 0 auto;
   position: relative;
   top: 40%;
   /* width: 25%;
@@ -20,14 +24,56 @@
 }
 
 .About-top-container > h3 {
+  font-family: "Corben", cursive;
   font-size: 4rem;
+
+  animation-name: fade-in-name;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-delay: 0;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-in-name {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -50px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.About-top-container > p {
+  font-family: "Corben", cursive;
+  opacity: 0;
+
+  animation-name: fade-in-name;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-in-name {
+  0% {
+    /* opacity: 0; */
+    transform: translate3d(0, -50px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 /*About-body*/
 
 .About-body {
-  
-  
   text-align: center;
 }
 
@@ -35,11 +81,6 @@
   margin: 100px auto 0;
   position: relative;
   width: 20%;
-  
-  /* top: 50px;
-  left: 42%;
-  width: 15%;  */
- 
 }
 
 .About-body-title > h4::after {
@@ -47,9 +88,11 @@
   position: absolute;
   left: 30%;
   right: 30%;
-  bottom: -20%;
+  bottom: -25%;
   border-bottom: 10px solid #333;
 }
+
+
 
 .About-body-text {
   margin-top: 120px;
@@ -59,19 +102,16 @@
   margin-bottom: 50px;
 }
 
-
-
 .About-skills-icons {
-  margin:10% auto 20%;
+  margin: 10% auto 20%;
   width: 80%;
-  
+
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 
-.About-skill-icon > p{
+.About-skill-icon > p {
   margin: 0;
   font-size: 22px;
 }
-

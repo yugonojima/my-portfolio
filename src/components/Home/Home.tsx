@@ -8,7 +8,7 @@ const Home = () => {
     <>
       <div id="top" className="top">
         <div className="top-container">
-          <p>野島 佑悟</p>
+          <p>Yugo Nojima</p>
         </div>
       </div>
       <div className="Area ">
