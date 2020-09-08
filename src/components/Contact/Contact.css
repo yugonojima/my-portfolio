@@ -1,0 +1,31 @@
+.Contact-container {
+  text-align: center;
+}
+
+.contact-header {
+  margin: 25% auto 10%;
+}
+
+.contact-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact {
+  margin-top: 10%;
+  width: 60%;
+}
+
+.contact-footer {
+  margin-bottom: 10%;
+}
+
+.contact-footer > p {
+  margin: 10% 0;
+}
+
+.contact-btn {
+  display: inline-block;
+  width: 40%;
+}

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 // import pageState from "./reducers/pageState";
 // import AppContext from "./contexts/Appcontext";
 import Header from "./components/Header/Header";
@@ -10,34 +10,29 @@ import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "../src/components/Home/Home";
 
 const App = () => {
-  // const [state, dispatch] = useReducer(pageState, [
-  //   true,
-  //   false,
-  //   false,
-  //   false,
-  //   false,
-  // ]);
-
+  const [checked, setChecked] = useState();
+  
+  
   return (
     <>
-      <Header />
+      <Header setChecked={setChecked} checked={checked}/>
 
       <Router>
         <Switch>
           <Route exact path="/" component={Home}>
-            <Home></Home>
+            <Home checked={checked}></Home>
           </Route>
           <Route path="/About">
-            <About></About>
+            <About checked={checked}></About>
           </Route>
           <Route path="/Thought">
-            <Thought></Thought>
+            <Thought checked={checked}></Thought>
           </Route>
           <Route path="/Works">
-            <Works></Works>
+            <Works checked={checked}></Works>
           </Route>
           <Route path="/Contact">
-            <Contact></Contact>
+            <Contact checked={checked}></Contact>
           </Route>
         </Switch>
       </Router>

@@ -3,9 +3,14 @@ import "./Home.css";
 import SwichButton from "../Button";
 import ContactArea from "./Contact-Area";
 
-const Home = () => {
+const Home = ({ checked }) => {
+  let className = "";
+  if (checked) {
+    className = "none";
+  }
+
   return (
-    <>
+    <div className={className}>
       <div id="top" className="top">
         <div className="top-container">
           <p>Yugo Nojima</p>
@@ -13,9 +18,9 @@ const Home = () => {
       </div>
       <div className="Area ">
         <div className="picture-container">
-          <div className="picture1">あ</div>
-          <div className="picture2">い</div>
-          <div className="picture3">う</div>
+          <div className="picture picture1"></div>
+          <div className="picture picture2"></div>
+          <div className="picture picture3"></div>
         </div>
 
         <div className="Area-container">
@@ -52,7 +57,7 @@ const Home = () => {
         </div>
       </div>
       <ContactArea />
-    </>
+    </div>
   );
 };
 

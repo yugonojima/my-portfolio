@@ -8,9 +8,14 @@ import { FaReact } from "react-icons/fa";
 import { SiRedux, SiMaterialUi } from "react-icons/si";
 import ContactArea from "../Home/Contact-Area";
 
-const About = () => {
+const About = ({checked}) => {
+  let className = "";
+  if (checked) {
+    className = "none";
+  } 
+
   return (
-    <>
+    <div className={className}>
       <div className="About-top">
         <div className="About-top-container">
           <h3>About</h3>
@@ -92,7 +97,7 @@ const About = () => {
         </div>
       </div>
       <ContactArea></ContactArea>
-    </>
+    </div>
   );
 };
 

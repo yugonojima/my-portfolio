@@ -2,11 +2,15 @@ import React from "react";
 import ContactArea from "../Home/Contact-Area";
 import "./Works.css";
 import DogIcon from "../../images/dog.png";
-import './Works.css'
+import "./Works.css";
 
-const Works = () => {
+const Works = ({ checked }) => {
+  let className = "";
+  if (checked) {
+    className = "none";
+  }
   return (
-    <>
+    <div className={className}>
       <div className="About-top">
         <div className="About-top-container">
           <h3>Works</h3>
@@ -18,7 +22,7 @@ const Works = () => {
           <div className="Works-body-title">
             <h4>Works</h4>
           </div>
-          <img src={DogIcon} alt="Dog appreciate image"></img>
+          <img src={DogIcon} alt="Dog appreciate "></img>
           <div className="Works-body-text">
             <p>
               ごめんなさい！まだインターンにも１度も行ったこともないので、これといった作品がありません...
@@ -27,7 +31,11 @@ const Works = () => {
               githubにこれまで勉強してきたことを随時更新していきますので、
               <br></br>
               一応githubのアカウントを載せておきます。→
-              <a href="https://github.com/yugonojima" target="_blank">
+              <a
+                href="https://github.com/yugonojima"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 {" "}
                 Yugo Github Acount
               </a>
@@ -36,7 +44,7 @@ const Works = () => {
         </div>
         <ContactArea></ContactArea>
       </div>
-    </>
+    </div>
   );
 };
 

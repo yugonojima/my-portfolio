@@ -2,9 +2,13 @@ import React from "react";
 import ContactArea from "../Home/Contact-Area";
 import './Thought.css'
 
-const Thought = () => {
+const Thought = ({checked}) => {
+  let className = "";
+  if (checked) {
+    className = "none";
+  }
   return (
-    <>
+    <div className={className}>
       <div className="About-top">
         <div className="About-top-container">
           <h3>Thought</h3>
@@ -59,7 +63,7 @@ const Thought = () => {
         </div>
       </div>
       <ContactArea></ContactArea>
-    </>
+    </div>
   );
 };
 
