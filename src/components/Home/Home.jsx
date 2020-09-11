@@ -3,14 +3,10 @@ import "./Home.css";
 import SwichButton from "../Button";
 import ContactArea from "./Contact-Area";
 
-const Home = ({ checked }) => {
-  let className = "";
-  if (checked) {
-    className = "none";
-  }
-
+const Home = () => {
+  
   return (
-    <div className={className}>
+    <div >
       <div id="top" className="top">
         <div className="top-container">
           <p>Yugo Nojima</p>

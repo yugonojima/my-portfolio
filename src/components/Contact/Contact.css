@@ -1,10 +1,9 @@
 .Contact-container {
   text-align: center;
+  padding: 25%;
 }
 
-.contact-header {
-  margin: 25% auto 10%;
-}
+
 
 .contact-body {
   display: flex;

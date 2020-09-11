@@ -1,27 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.css";
 import Button from "@material-ui/core/Button";
 import { HashRouter as Router, Link } from "react-router-dom";
 import DehazeIcon from "@material-ui/icons/Dehaze";
 
-const Header = ({ setChecked, checked }) => {
-  let className = "menu-container";
-  let menubarClass = "open";
-  if (checked) {
-    className = "menu-appear";
-    menubarClass = "none";
-  }
+const Header = () => {
+  const [checked, setChecked] = useState(false);
   const removeChecked = () => {
-    setChecked("");
+    setChecked(false);
   };
+
 
   return (
     <div className="header">
       <div className="header-left">
-        {/* <input id="menu" type="checkbox"></input> */}
         <label
           htmlFor="menu"
-          className={menubarClass}
+          className={checked ? "none-menu" : "open"}
           onClick={() => {
             setChecked(true);
           }}
@@ -29,9 +24,14 @@ const Header = ({ setChecked, checked }) => {
           <DehazeIcon style={{ fontSize: 40 }}></DehazeIcon>
         </label>
         {/* メニュー */}
-        <div className={className}>
+        <div className={checked ? "menu-appear" : "menu-container"}>
           <div className="menus1">
-            <label htmlFor="menu" className="close" onClick={removeChecked}>
+            <label
+              type="button"
+              htmlFor="menu"
+              className="close"
+              onClick={() => setChecked(false)}
+            >
               ✖︎
             </label>
             <div className="menus2">
@@ -61,7 +61,7 @@ const Header = ({ setChecked, checked }) => {
                     Contact
                   </div>
                 </Link>
-              </Router>
+                </Router>
             </div>
           </div>
         </div>
@@ -93,7 +93,7 @@ const Header = ({ setChecked, checked }) => {
               Contact
             </Button>
           </Link>
-        </Router>
+          </Router>
       </div>
     </div>
   );

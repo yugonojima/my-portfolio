@@ -1,7 +1,7 @@
 .top {
   margin: 0;
   background-image: url(../../images/desk.jpg);
-  background-size:cover;
+  background-size: cover;
   width: 100%;
   height: 800px;
   background-attachment: fixed;
@@ -10,16 +10,14 @@
 .top-container {
   width: 40%;
   z-index: 1;
-  margin: 0 auto ;
+  margin: 0 auto;
   position: relative;
   text-align: center;
   top: 40%;
-  
 }
 
 .top-container > p {
-  
-  font-family: 'Kaushan Script', cursive;
+  font-family: "Kaushan Script", cursive;
   font-size: 4rem;
 
   animation-name: fade-in-name;
@@ -44,7 +42,7 @@
 .Area {
   width: 100%;
   height: 900px;
-
+  background-color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,7 +69,7 @@
 }
 
 .Area-container > p {
-  font-family: 'ヒラギノ明朝 ProN W3' ,'MS UI Gothic',sans-serif;
+  font-family: "ヒラギノ明朝 ProN W3", "MS UI Gothic", sans-serif;
   margin-top: 90px;
   margin-bottom: 90px;
   font-size: 1.2rem;
@@ -94,20 +92,18 @@
   height: 150px;
   position: absolute;
   background-size: cover;
-
 }
 .picture1 {
   background-image: url(../../images/beach.jpeg);
 }
 .picture2 {
   background-image: url(../../images/diving.jpeg);
-left: 150px;
-top: 100px;
+  left: 150px;
+  top: 100px;
 }
 .picture3 {
   background-image: url(../../images/nudle.jpeg);
-  top: 200px;
-  z-index: -1;
+  top: 230px;
 }
 
 .Thought-area {
@@ -119,12 +115,26 @@ top: 100px;
 .Works-area {
   overflow: hidden;
 }
+
 .Contact-area {
   background-image: url(../../images/desk.jpg);
   background-attachment: fixed;
-  background-size: cover;
-  overflow: hidden;
+  background-size: cover; 
+  /* /* overflow: hidden; */
 }
+
+/* .Contact-area::before {
+  background: url(../../images/desk.jpg) no-repeat center;
+  background-size: cover; 
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%; 
+  height: 100vh;
+} */
 
 .icon-container {
   margin-top: 90px;
@@ -134,27 +144,25 @@ top: 100px;
   align-items: center;
 }
 
-.none {
-  display: none;
-}
-
-
 @media screen and (max-width: 1269px) {
   .picture-container {
+    z-index: 1;
     bottom: 200px;
   }
   .picture2 {
-left: 0;
-top: 170px;  }
+    left: 0;
+    top: 170px;
+  }
 
-.picture3 {
-  top: 340px;
-}
+  .picture3 {
+    top: 340px;
+  }
 }
 
 @media screen and (max-width: 1000px) {
   .picture1,
   .picture2,
   .picture3 {
-display: none;  }
+    display: none;
+  }
 }
