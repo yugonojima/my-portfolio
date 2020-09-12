@@ -1,3 +1,31 @@
+.Thought-body {
+  height: 1700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #ffffff;
+}
+
 .Thought-container1 {
-  margin-bottom: 200px;
+  text-align: center;
+}
+
+.Thought-body-title {
+  margin: 0 auto ;
+  position: relative;
+  width: 50%;
+}
+
+.Thought-body-title > h4::after {
+  content: "";
+  position: absolute;
+  left: 30%;
+  right: 30%;
+  bottom: -25%;
+  border-bottom: 10px solid #333;
+}
+
+.Thought-body-text {
+  margin: 100px 0;
 }

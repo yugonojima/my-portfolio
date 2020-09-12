@@ -1,14 +1,23 @@
 .top {
-  margin: 0;
-  background-image: url(../../images/desk.jpg);
-  background-size: cover;
-  width: 100%;
   height: 800px;
-  background-attachment: fixed;
+}
+
+.top:before{
+  content:"";
+  display:block;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:-1;
+  width:100%;
+  height:800px;
+  background:url(../../images/desk.jpg) center no-repeat;
+  background-size:cover;
 }
 
 .top-container {
-  width: 40%;
+  height: 150px;
+  width: 60%;
   z-index: 1;
   margin: 0 auto;
   position: relative;
@@ -107,34 +116,31 @@
 }
 
 .Thought-area {
-  background-image: url(../../images/desk.jpg);
-  background-attachment: fixed;
-  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+}
+
+.Thought-area:before{
+  content:"";
+  display:block;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:-1;
+  width:100%;
+  height:800px;
+  background:url(../../images/desk.jpg) center no-repeat;
+  background-size:cover;
 }
 
 .Works-area {
   overflow: hidden;
 }
 
-.Contact-area {
-  background-image: url(../../images/desk.jpg);
-  background-attachment: fixed;
-  background-size: cover; 
-  /* /* overflow: hidden; */
-}
 
-/* .Contact-area::before {
-  background: url(../../images/desk.jpg) no-repeat center;
-  background-size: cover; 
-  content: "";
-  display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  width: 100%; 
-  height: 100vh;
-} */
+
 
 .icon-container {
   margin-top: 90px;
@@ -166,3 +172,5 @@
     display: none;
   }
 }
+
+

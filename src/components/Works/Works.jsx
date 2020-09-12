@@ -17,7 +17,7 @@ const Works = ({ checked }) => {
           <p>sorry , I haven't made website and services... </p>
         </div>
       </div>
-      <div className="About-body">
+      <div className="Works-body">
         <div className="About-container1">
           <div className="Works-body-title">
             <h4>Works</h4>
@@ -42,8 +42,9 @@ const Works = ({ checked }) => {
             </p>
           </div>
         </div>
-        <ContactArea></ContactArea>
+        
       </div>
+      <ContactArea></ContactArea>
     </div>
   );
 };

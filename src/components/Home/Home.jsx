@@ -2,14 +2,12 @@ import React from "react";
 import "./Home.css";
 import SwichButton from "../Button";
 import ContactArea from "./Contact-Area";
-
 const Home = () => {
-  
   return (
-    <div >
+    <div>
       <div id="top" className="top">
         <div className="top-container">
-          <p>Yugo Nojima</p>
+          <p>Yugo Nojima </p>
         </div>
       </div>
       <div className="Area ">
@@ -30,7 +28,7 @@ const Home = () => {
           <SwichButton route="About" color="outline-success"></SwichButton>
         </div>
       </div>
-      <div className="Area Thought-area">
+      <div className=" Thought-area">
         <div className="Area-container">
           <h3>Thought</h3>
           <p>

@@ -2,19 +2,32 @@ p {
   font-family: "ヒラギノ明朝 ProN W3", "MS UI Gothic", sans-serif;
 }
 .About-top {
-  margin: 0;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: 0;
   background-image: url(../../images/desk.jpg);
   background-size: cover;
   width: 100%;
   height: 800px;
-  background-attachment: fixed;
+  background-attachment: fixed; */
+}
+
+.About-top:before {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 800px;
+  background: url(../../images/desk.jpg) center no-repeat;
+  background-size: cover;
 }
 
 .About-top-container {
-  width: 40%;
-  margin: 0 auto;
-  position: relative;
-  top: 40%;
   text-align: center;
   z-index: 1;
 }
@@ -70,14 +83,18 @@ p {
 /*About-body*/
 
 .About-body {
+  height: 1400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   background-color: #ffffff;
 }
 
 .About-body-title {
-  margin: 100px auto 0;
+  margin: 0 auto ;
   position: relative;
-  width: 20%;
+  width: 50%;
 }
 
 .About-body-title > h4::after {
@@ -98,7 +115,7 @@ p {
 }
 
 .About-skills-icons {
-  margin: 10% auto 20%;
+  margin: 10% auto 0;
   width: 80%;
 
   display: flex;

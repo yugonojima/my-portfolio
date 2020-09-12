@@ -4,6 +4,15 @@ img {
   height: 300px;
 }
 
+.Works-body {
+  height: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #ffffff;
+}
+
 .Works-body-text {
   margin-bottom: 130px;
   margin-top: 60px;
@@ -14,7 +23,8 @@ img {
 }
 
 .Works-body-title {
-  margin-top: 100px;
+  width: 50%;
+  margin: 100px auto 0;
   position: relative;
   
 }
@@ -22,8 +32,8 @@ img {
 .Works-body-title > h4::after {
   content: "";
   position: absolute;
-  left: 47%;
-  right: 47%;
-  bottom: -50%;
+  left: 30%;
+  right: 30%;
+  bottom: -60%;
   border-bottom: 10px solid #333;
 }
