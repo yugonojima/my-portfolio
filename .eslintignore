@@ -1,0 +1,8 @@
+/dist/
+/node_modules/
+/functions/node_modules/
+/functions/dist/
+/public/
+/*.js
+/package.json
+/package-lock.json
