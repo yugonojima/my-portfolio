@@ -32,7 +32,7 @@ const Works = ({ checked }) => {
             <p>
               githubにこれまで勉強してきたことを随時更新していきますので、
               <br></br>
-              一応githubのアカウントを載せておきます。→
+              githubのアカウントを載せておきます。→
               <a
                 href="https://github.com/yugonojima"
                 target="_blank"
