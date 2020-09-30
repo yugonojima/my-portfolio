@@ -1,8 +1,8 @@
 import React from "react";
 import ContactArea from "../Home/Contact-Area";
 import "./Works.css";
-import DogIcon from "../../images/dog.png";
-import "./Works.css";
+import shopReviewScreenShot from "../../images/shopReviewScreenShot.png";
+
 
 const Works = ({ checked }) => {
   let className = "";
@@ -22,11 +22,13 @@ const Works = ({ checked }) => {
           <div className="Works-body-title">
             <h4>Works</h4>
           </div>
-          <img src={DogIcon} alt="Dog appreciate "></img>
+          <img src={shopReviewScreenShot} alt="Dog appreciate "></img>
           <div className="Works-body-text">
             <p>
-              ごめんなさい！まだインターンにも１度も行ったこともないので、これといった作品がありません...
+              食べログアプリ
+            
             </p>
+            <p>簡単な食べログのようなスマホアプリをReact NativeとType Scriptで作成しました</p>
             <p>
               githubにこれまで勉強してきたことを随時更新していきますので、
               <br></br>
