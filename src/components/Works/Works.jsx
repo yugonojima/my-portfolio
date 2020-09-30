@@ -3,7 +3,6 @@ import ContactArea from "../Home/Contact-Area";
 import "./Works.css";
 import shopReviewScreenShot from "../../images/shopReviewScreenShot.png";
 
-
 const Works = ({ checked }) => {
   let className = "";
   if (checked) {
@@ -24,11 +23,14 @@ const Works = ({ checked }) => {
           </div>
           <img src={shopReviewScreenShot} alt="Dog appreciate "></img>
           <div className="Works-body-text">
+            <a href="https://github.com/yugonojima/shop-review-mobile-app">
+              <p>食べログアプリ</p>
+            </a>
+
             <p>
-              食べログアプリ
-            
+              簡単な食べログのようなスマホアプリをReact NativeとType
+              Scriptで作成しました
             </p>
-            <p>簡単な食べログのようなスマホアプリをReact NativeとType Scriptで作成しました</p>
             <p>
               githubにこれまで勉強してきたことを随時更新していきますので、
               <br></br>
@@ -44,7 +46,6 @@ const Works = ({ checked }) => {
             </p>
           </div>
         </div>
-        
       </div>
       <ContactArea></ContactArea>
     </div>
