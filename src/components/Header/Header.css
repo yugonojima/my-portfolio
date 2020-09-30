@@ -1,21 +1,105 @@
 .header {
   height: 100px;
-  width: 100%;
-  display: flex;
+  width: 100vw;
+  /* display: flex; */
+  /* top: 0;
+  left: 0; */
   justify-content: space-around;
   position: fixed;
+  z-index: 2;
 }
 
-.header-left {
+/* .header-left {
   width: 170px;
   display: flex;
   justify-content: space-around;
-  align-items: center;
-}
+} */
 
 .header-right {
-  width: 40%;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: flex-end;
+  margin: 20px 200px 0 0;
+}
+
+.header-right > a {
+  margin-right: 30px;
+}
+
+/* メニューバーの CSS */
+.open {
+  display: none;
+}
+
+.menu-container {
+  /* position: absolute; */
+  /* left: -100vw; */
+  display: none;
+}
+
+.close {
+  position: absolute;
+  right: 10px;
+  top: 7px;
+  font-size: 35px;
+  z-index: 3;
+}
+
+.menus1 {
+  background: linear-gradient(
+    -45deg,
+    rgba(246, 255, 0, 1),
+    rgba(255, 0, 161, 1)
+  );
+  height: 100vh;
+
+  width: 100%;
+  position: relative;
+}
+.menus2 {
+  position: relative;
+  top: 25%;
+  left: 46%;
+}
+.menu {
+  text-align: center;
+  height: 30px;
+  width: 75px;
+  font-size: 18px;
+  margin-bottom: 40px;
+  color: antiquewhite;
+}
+.menu:hover {
+  animation-delay: 1s;
+  border-style: solid;
+  border-width: 1px;
+  border-color: antiquewhite;
+}
+
+.none-menu {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .header-right {
+    display: none;
+  }
+
+  .open,
+  .close {
+    display: block;
+  }
+  .open {
+    position: absolute;
+    right: 10px;
+    top: 7px;
+  }
+
+  .menu-appear {
+    left: 0;
+  }
+}
+@media screen and (min-width: 1001px) {
+  .header-left {
+    display: none;
+  }
 }

@@ -1,0 +1,129 @@
+p {
+  font-family: "ヒラギノ明朝 ProN W3", "MS UI Gothic", sans-serif;
+}
+.About-top {
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: 0;
+  background-image: url(../../images/desk.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 800px;
+  background-attachment: fixed; */
+}
+
+.About-top:before {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 800px;
+  background: url(../../images/desk.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.About-top-container {
+  text-align: center;
+  z-index: 1;
+}
+
+.About-top-container > h3 {
+  font-family: "Corben", cursive;
+  font-size: 4rem;
+
+  animation-name: fade-in-name;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-delay: 0;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-in-name {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -50px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.About-top-container > p {
+  font-family: "Corben", cursive;
+  opacity: 0;
+
+  animation-name: fade-in-name;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-in-name {
+  0% {
+    /* opacity: 0; */
+    transform: translate3d(0, -50px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/*About-body*/
+
+.About-body {
+  height: 1400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.About-body-title {
+  margin: 0 auto ;
+  position: relative;
+  width: 50%;
+}
+
+.About-body-title > h4::after {
+  content: "";
+  position: absolute;
+  left: 30%;
+  right: 30%;
+  bottom: -25%;
+  border-bottom: 10px solid #333;
+}
+
+.About-body-text {
+  margin-top: 120px;
+}
+
+.About-body-text > p {
+  margin-bottom: 50px;
+}
+
+.About-skills-icons {
+  margin: 10% auto 0;
+  width: 80%;
+
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.About-skill-icon > p {
+  margin: 0;
+  font-size: 22px;
+}

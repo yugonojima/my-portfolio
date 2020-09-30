@@ -1,0 +1,39 @@
+img {
+  margin: 50px 0 0;
+  width: 400px;
+  height: 600px;
+}
+
+.Works-body {
+  height: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.Works-body-text {
+  margin-bottom: 130px;
+  margin-top: 60px;
+}
+
+.Works-body-text > p {
+  margin-bottom: 60px;
+}
+
+.Works-body-title {
+  width: 50%;
+  margin: 100px auto 0;
+  position: relative;
+  
+}
+
+.Works-body-title > h4::after {
+  content: "";
+  position: absolute;
+  left: 30%;
+  right: 30%;
+  bottom: -60%;
+  border-bottom: 10px solid #333;
+}

@@ -1,13 +1,12 @@
-.top {
+
+
+.top{
   margin: 0;
   background-image: url(./images/ocean.jpg);
   background-size: cover;
   width: 100%;
   height: 800px;
   background-attachment: fixed;
-
-  /*  */
-  
 }
 
 .About-area {
