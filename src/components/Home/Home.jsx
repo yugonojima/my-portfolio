@@ -21,9 +21,9 @@ const Home = () => {
           <h3 className="Area-title"> About Me</h3>
 
           <p>
-            現在、都内の大学に通う大学3年生です。<br></br>
-            海が好きで今の大学に入りました。<br></br>
-            フロントエンドエンジニアを目指して、日々勉強しています。
+            現在、都内の大学に通う大学院一年生です。<br></br>
+            海が好きで現在の大学に入りました。<br></br>
+            データサイエンティスト・AIエンジニアを目指して、<br></br>日々勉強しています。
           </p>
           <SwichButton route="About" color="outline-success"></SwichButton>
         </div>
@@ -32,7 +32,8 @@ const Home = () => {
         <div className="Area-container">
           <h3>Thought</h3>
           <p>
-            ごちゃごちゃしてない、シンプルなデザインが好きです。<br></br>
+            趣味程度でSignateやKaggleでのCompetitionに参加しています<br></br>
+            将来的には、機械学習モデルを組み込んだアプリを作成したいです。<br></br>
             ユーザーが不快感を感じない、UI/UXを構築していきたいです。<br></br>
             もちろんレスポンシブで制作します。
           </p>

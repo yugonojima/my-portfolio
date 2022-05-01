@@ -2,7 +2,7 @@ p {
   font-family: "ヒラギノ明朝 ProN W3", "MS UI Gothic", sans-serif;
 }
 .About-top {
-  height: 800px;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,7 +22,7 @@ p {
   left: 0;
   z-index: -1;
   width: 100%;
-  height: 800px;
+  height: 100vh;
   background: url(../../images/desk.jpg) center no-repeat;
   background-size: cover;
 }
@@ -83,7 +83,8 @@ p {
 /*About-body*/
 
 .About-body {
-  height: 1400px;
+  /* height: 1400px; */
+  padding:15% 0 ;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -115,15 +116,52 @@ p {
 }
 
 .About-skills-icons {
-  margin: 10% auto 0;
-  width: 80%;
 
+}
+
+.About-skill-icon {
+  margin: 4%;
+  font-size: 22px;
+}
+
+.About-container2 {
+  margin-top: 20%;
+}
+
+.Front-end {
+  color: #ffffff;
+  font-family:'Comic Sans MS';
+  font-size: 160%;
+  background-color:orange;
+  margin:14% auto -12%;
+  width:30%;
+}
+
+.Front-end-icons {
+  margin: 10% auto 0;
+  width: 100%;
+  border: 5px solid orange;
+  border-radius: 20px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 
-.About-skill-icon > p {
-  margin: 0;
-  font-size: 22px;
+.Back-end {
+  color: #ffffff;
+  font-family:'Comic Sans MS';
+  font-size: 160%;
+  background-color:skyblue;
+  margin:14% auto -12%;
+  width:30%;
+}
+
+.Back-end-icons {
+  margin: 10% auto 0;
+  width: 100%;
+  border: 5px solid skyblue;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
