@@ -9,12 +9,18 @@ const Contact = ({ checked }) => {
   if (checked) {
     className = "none";
   }
-
+  
   const [to_name, setTo_Name] = useState("");
   const [from_email, setfrom_email] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
-
+ 
+  const reset_State = () => {
+    setTo_Name("")
+    setfrom_email("")
+    setSubject("")
+    setMessage("")
+  }
 
   const submitInfo = () => {
     if (to_name.length === 0 || from_email.length === 0) {
@@ -36,6 +42,7 @@ const Contact = ({ checked }) => {
            console.log(error.text);
        });
        alert("送信します")
+       reset_State()
     }
   }
   return (
@@ -52,6 +59,7 @@ const Contact = ({ checked }) => {
             label="Name"
             variant="outlined"
             fullWidth 
+            value={to_name}
             onChange={(event) => {setTo_Name(event.target.value)}}
           ></TextField>
         </div>
@@ -62,6 +70,7 @@ const Contact = ({ checked }) => {
             label="Mail"
             variant="outlined"
             fullWidth
+            value={from_email}
             onChange={(event) => {setfrom_email(event.target.value)}}
           ></TextField>
         </div>
@@ -72,6 +81,7 @@ const Contact = ({ checked }) => {
             label="Subject"
             variant="outlined"
             fullWidth
+            value={subject}
             onChange={(event) => {setSubject(event.target.value)}}
           ></TextField>
         </div>
@@ -84,6 +94,7 @@ const Contact = ({ checked }) => {
             rows={5}
             variant="outlined"
             fullWidth
+            value={message}
             onChange={(event) => {setMessage(event.target.value)}}
           ></TextField>
         </div>
