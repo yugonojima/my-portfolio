@@ -90,10 +90,10 @@
 }
 
 .picture-container {
+  width: 100px;
   position: relative;
-
-  left: 550px;
-  bottom: 100px;
+  left: 110%;
+  top: 70px;
 }
 
 .picture {

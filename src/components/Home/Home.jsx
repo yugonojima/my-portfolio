@@ -10,16 +10,14 @@ const Home = () => {
           <p>Yugo Nojima </p>
         </div>
       </div>
-      <div className="Area ">
-        <div className="picture-container">
-          <div className="picture picture1"></div>
-          <div className="picture picture2"></div>
-          <div className="picture picture3"></div>
-        </div>
-
+      <div className="Area">
         <div className="Area-container">
+          <div className="picture-container">
+            <div className="picture picture1"></div>
+            <div className="picture picture2"></div>
+            <div className="picture picture3"></div>
+          </div>
           <h3 className="Area-title"> About Me</h3>
-
           <p>
             現在、都内の大学に通う大学院一年生です。<br></br>
             海が好きで現在の大学に入りました。<br></br>

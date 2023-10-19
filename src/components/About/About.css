@@ -115,10 +115,6 @@ p {
   margin-bottom: 50px;
 }
 
-.About-skills-icons {
-
-}
-
 .About-skill-icon {
   margin: 4%;
   font-size: 22px;
@@ -127,6 +123,69 @@ p {
 .About-container2 {
   margin-top: 20%;
 }
+
+.Qualification {
+  color: #ffffff;
+  font-family:'Comic Sans MS';
+  font-size: 160%;
+  background-color:plum;
+  margin:14% auto -12%;
+  width:30%;
+}
+
+.Qualification-icons {
+  margin: 10% auto 0;
+  width: 100%;
+  border: 5px solid plum;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.Deeplearning-div {
+  width: 200px;
+  height: 230px;
+  position: relative;
+  margin: 4%;
+ }
+
+ .toeic-div {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  margin: 4%;
+ }
+
+ .Qualification-icon {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  background-size: cover;
+}
+.Qualification-icon1 {
+  background-image: url(../../images/GeneralBadge.png);
+}
+
+.Qualification-icon2 {
+  background-image: url(../../images/GeneralBadge.png);
+}
+
+.Qualification-icon3 {
+  background-image: url(../../images/TOEIC.jpg);
+  height: 150px;
+  width: 200px;
+  position: absolute;
+  background-size: cover;
+}
+
+ .Qualification-p {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 0;
+ }
 
 .Front-end {
   color: #ffffff;
@@ -165,3 +224,29 @@ p {
   justify-content: space-around;
   flex-wrap: wrap;
 }
+/* .About-container {
+  width: 100%;
+} */
+/* .About-container1{
+  position: relative;
+} */
+
+/* .about-picture-container {
+  position: relative;
+  left: 110%;
+  bottom: 0px;
+} */
+
+.picture4 {
+  background-image: url(../../images/tennis.JPG);
+}
+.picture5 {
+  background-image: url(../../images/cement.JPG);
+  left: 80px;
+  top: 140px;
+}
+.picture6 {
+  background-image: url(../../images/sinkai.JPG);
+  top: 280px;
+}
+

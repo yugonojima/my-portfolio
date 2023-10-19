@@ -24,39 +24,58 @@ const About = ({ checked }) => {
         </div>
       </div>
       <div className="About-body">
-        <div>
+        <div className="About-container">
           <div className="About-container1">
             <div className="About-body-title">
               <p>my name is</p>
               <h4>Yugo Nojima</h4>
             </div>
             <div className="About-body-text">
+              <div className="picture-container">
+                <div className="picture picture4"></div>
+                <div className="picture picture5"></div>
+                <div className="picture picture6"></div>
+              </div>
               <p>
-                中学はサッカー部、高校、大学ではテニス部に所属していました。
-                <br></br>
-                埼玉県で生まれ育ち、大学１年生のときに東京に引っ越してきました。
-              </p>
-              <p>
-                現在は、修士1年で、深海に浸漬したセメント系材料に繁茂する微生物の研究を行なっています。
-                <br></br>
-                大学には海が好きな学生が多いので、友達とはたまにダイビングや釣りをしに行ったりしています。
-                <br></br>
-                よかったら大学のホームページも見てみてください →
-                <a
+               {'<高校>'}<br></br>
+               埼玉県立川口北高等学校<br></br>
+               {'<大学/大学院>'}<br></br>
+               東京海洋大学 海洋資源環境学部/東京海洋大学大学院 海洋科学技術研究科<br></br>
+               <a
                   href="https://www.kaiyodai.ac.jp/"
                   target="_blank"
                   rel="noopener noreferrer"
                   >
-                  大学ホームページ
-                </a>
+                  →大学ホームページ
+                </a><br></br>
+               {'<部活>'}<br></br>
+               中学 : サッカー部 、  高校-大学 : 硬式庭球部<br></br>
+               大学三年次には男子主将をしておりました<br></br>
+                <br></br>
               </p>
               <p>
-                データサイエンティストやAIエンジニアを目指しており、現在E資格の取得を目指して勉強に励んでいます。
+                {'<研究テーマ>'}<br></br>
+                「セメント系材料表面における深海微生物のバイオフィルム形成能およびその機能の解明」<br></br>
+                {'<研究における活動実績>'}<br></br>
+                資源素材学会 関東支部 ポスター賞受賞 (2022.8)<br></br>
+                学長賞受賞 (2022.9)
+                <br></br><br></br>
+                海洋研究開発機構(JAMSTEC)の研究船に乗船し、サンプリングを行わせていただいております。
+                <br></br><br></br>
               </p>
               <p>
-               現段階で、大きな成果物はありませんが、<div></div>将来的には、画像認識や物体検出、画像生成などのアプリケーションを作成してみたいと考えています。
+                {'<将来像(2024卒)>'}<br></br>
+                ソフトウェアエンジニア、データサイエンティスト、MLOps、AIエンジニア
+              </p>
+              <p>
+               現在は大学での研究が忙しく、プログラミングに時間を割けないことが悩みですが、<br></br>
+               時間に余裕ができた際にはコードを書くようにしています。<br></br>
+               ほぼ独学です、、。<br></br><br></br>
+               AIにも関心があり、G検定とE資格を取得しております。<br></br>
+               現在はSignate,kaggleのコンペでメダル獲得に向け奮闘しています。
               </p>
             </div>
+            
           </div>
           <div className="About-container2">
             <div className="About-body-title">
@@ -64,6 +83,23 @@ const About = ({ checked }) => {
               <h4>Skills</h4>
             </div>
             <div className="About-skills-icons">
+              <div className="Qualification">Qualifications</div>
+              <div className="Qualification-icons">
+                <div className="Deeplearning-div">
+                  <div className="Qualification-icon Qualification-icon1"></div>
+                  <p className="Qualification-p">G検定</p>
+                </div>
+                <div className="Deeplearning-div">
+                  <div className="Qualification-icon Qualification-icon2"></div>
+                  <p className="Qualification-p">E資格</p>
+                </div>
+                <div className="toeic-div">
+                  <div className="Qualification-icon3"></div>
+                  <p className="Qualification-p">TOEIC 780点</p>
+                </div>
+              </div>
+
+
               <div className="Front-end">Front-end</div>
               <div className="Front-end-icons">
                 <div className="About-skill-icon">
