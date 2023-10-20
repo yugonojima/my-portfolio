@@ -18,37 +18,38 @@ const Thought = ({ checked }) => {
       <div className="Thought-body">
         <div className="Thought-container1">
           <div className="Thought-body-title">
-            <p>design</p>
-            <h4>Simple&Modern</h4>
+            <p>Simple&Modern</p>
+            <h4>Design</h4>
           </div>
           <div className="Thought-body-text">
-            <p>シンプルでモダンなデザインが好きです。</p>
+            <p>シンプルでモダンなデザインが好き</p>
             <p>
-              デザイナー志望ではありませんが、最低限、目的やテーマに沿ってデザイン・レイアウトしていけるように努力しています。
+              デザイナー志望ではないが、UI/UXは大切にしたい
             </p>
           </div>
           <div className="Thought-body-title">
-            <p>studying</p>
+            <p>Who I want to be</p>
             <h4>Future</h4>
           </div>
           <div className="Thought-body-text">
             <p>
-              データサイエンティスト或いはAIエンジニアとしてのキャリアを目指しています。
+              アプリ開発とAIに確固たる知識と経験を有し、頼られる存在となる
             </p>
             <p>
-              データの価値を最大化するデータ処理、特徴量抽出、モデル最適化を目指します。
+              ハッカソンやkaggleで実績を残す
             </p>
           </div>
           <div className="Thought-body-title">
-            <p>mobile friendly</p>
-            <h4>Responsive</h4>
+            <p>self analysis</p>
+            <h4>Personality</h4>
           </div>
           <div className="Thought-body-text">
             <p>
-              スマホが当たり前の時代ですので、<br></br>
-              もちろんレスポンシブで開発します。
-            </p>
-            <p>スマホでも見やすいようにデザインします。</p>
+              初挑戦が好き<br></br>
+              プログラミングは知らないことだらけなとこも楽しい<br></br><br></br>
+              プライベートでも行ったことがある場所への旅行を嫌う
+            </p><br></br>
+            <p>金銭的な苦労も様々経験したため、安定志向な一面も持ち合わせる</p>
           </div>
           <div className="Thought-body-title">
             <p>enjoy life</p>
@@ -56,9 +57,10 @@ const Thought = ({ checked }) => {
           </div>
           <div className="Thought-body-text">
             <p>
-              まだあまり外の景色をみたことがないので、いろんな国や街に行ってみたいです。
+              東北地方、中国地方、九州地方は訪れていない県が多い<br></br>
+              海外旅行はグアムとタイのみ<br></br><br></br>
+              海外旅行を熱望しているが、金銭的、時間的余裕が生まれないことが悩み
             </p>
-            <p>旅行に一緒に行ってくれる方募集してます！</p>
           </div>
         </div>
       </div>

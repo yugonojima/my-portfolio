@@ -19,21 +19,22 @@ const Home = () => {
           </div>
           <h3 className="Area-title"> About Me</h3>
           <p>
-            現在、都内の大学に通う大学院一年生です。<br></br>
-            海が好きで現在の大学に入りました。<br></br>
-            データサイエンティスト・AIエンジニアを目指して、<br></br>日々勉強しています。
+            現在、都内の大学に通う大学院二年生<br></br>
+            他ではできない貴重な経験・研究がしたいと考え、現在の大学に入学<br></br>
+            研究と並行してプログラミングや機械学習を学んでいる<br></br>
           </p>
           <SwichButton route="About" color="outline-success"></SwichButton>
         </div>
       </div>
-      <div className=" Thought-area">
+      <div className="Thought-area">
         <div className="Area-container">
           <h3>Thought</h3>
           <p>
-            趣味程度でSignateやKaggleでのCompetitionに参加しています<br></br>
-            将来的には、機械学習モデルを組み込んだアプリを作成したいです。<br></br>
-            ユーザーが不快感を感じない、UI/UXを構築していきたいです。<br></br>
-            もちろんレスポンシブで制作します。
+            現在は研究に重点を置いているが、<br></br>
+            卒業後は少しでも早く最前線で活躍できるエンジニアになりたいと考えている<br></br>
+            <br></br>
+            研究は楽しいが、AIの知識を活かしてビジネスに結びつける働き方は魅力的だと感じる<br></br>
+            安定と挑戦の両方を取りたい派<br></br>
           </p>
           <SwichButton route="Thought" color="outline-danger"></SwichButton>
         </div>
@@ -42,9 +43,12 @@ const Home = () => {
         <div className="Area-container">
           <h3>Works</h3>
           <p>
-            まだ初学者なので、これといった作品はありませんが、今後作成した作品は
-            <br></br>
-            随時、githubに掲載していきたいと思います。
+            大学院では論文を執筆する予定。<br></br>
+            無事投稿できた際には掲載します
+            <br></br><br></br>
+            個人開発したプログラムはgithubに随時投稿しているが、<br></br>
+            まだあまり大したものは作れていない、、<br></br>
+            コンペやインターンで作成したデータ分析/AIモデルのスクリプトもいくつかgithubに掲載している
           </p>
           <SwichButton route="Works" color="outline-info"></SwichButton>
         </div>

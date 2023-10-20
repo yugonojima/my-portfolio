@@ -5,7 +5,6 @@ img {
 }
 
 .Works-body {
-  height: 1200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,13 +12,17 @@ img {
   background-color: #ffffff;
 }
 
-.Works-body-text {
+.Works-body-container {
   margin-bottom: 130px;
   margin-top: 60px;
 }
 
-.Works-body-text > p {
+.Works-body-container > p {
   margin-bottom: 60px;
+}
+
+.works-p {
+  margin-top: 2rem;
 }
 
 .Works-body-title {
@@ -36,4 +39,23 @@ img {
   right: 30%;
   bottom: -60%;
   border-bottom: 10px solid #333;
+}
+
+.cell-image {
+  width: 300px;
+  height: 300px;
+}
+
+.nlp-image{
+  width: 500px;
+  height: 350px;
+}
+
+.mitsubishi-image{
+  width: 500px;
+  height: 300px;
+}
+
+.works-title {
+  margin-top: 100px;
 }
