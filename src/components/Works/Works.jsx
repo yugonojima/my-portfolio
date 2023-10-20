@@ -65,31 +65,31 @@ const Works = ({ checked }) => {
             <h5>{'<機械学習>'}</h5>
           </div>
 
-          <div className="works-body-container">
+          <div className="Works-body-container">
           <img src={nlp100} alt="nlp100" className="nlp-image"></img>
           <a href="https://nlp100.github.io/ja/" >
              <p className="works-p">言語処理100本ノック</p>
           </a>
           <p>言語処理モデルの前処理からモデル作成までを一貫して学べる問題集<br></br>
           本問題集の全章にチャレンジし、第十章(モデル作成)にチャレンジした際のスクリプトをgithubにて掲載した
-          </p>
-          <p>Model - <a  href="https://github.com/yugonojima/NLP100Exercise-Chapter10">seq2seq</a> (encoder:LSTM, decoder:LSTM with attention_mechanism)</p>
+          </p><br></br>
+          <p>Model - <a  href="https://github.com/yugonojima/NLP100Exercise-Chapter10">seq2seq</a> (encoder:LSTM, decoder:LSTM with attention_mechanism)</p><br></br>
           <p>Model - <a  href="https://github.com/yugonojima/NLP100Exercise-Chapter10-BART">BART</a> (Hugging faceより学習済みモデル<a href="https://huggingface.co/ken11/mbart-ja-en">ken11/mbart-ja-en</a>をfine-tuning)</p>
           </div>
          
-          <div className="works-body-container">
-          <img src={mitsubishi} alt="sigante" className="mitsubishi-image"></img>
-          <a href="https://nlp100.github.io/ja/" >
-             <p className="works-p">MUFG Data Science Champion Ship 2023</p>
-          </a>
-          <p>SiganteのCompetition<br></br>
-          タスク内容 - クレジットカードの顧客登録情報や決済手段・利用場所といった<br></br>定量及び定性データを元に分析モデルを構築して、カード不正利用を二値分類
-          </p>
-          <p>Model - <a  href="https://github.com/yugonojima/NLP100Exercise-Chapter10">Stacking</a> ( layer_1: XGBoost, RandomForest, NN, KNeighbors, logistic_Regression, RGF<br></br>
-          layer_2: XGBoost,RandomForest, NN<br></br>
-          layer_3: logistic_Regression , XGBoost)
-          </p>
-          <p>最終評価 - 0.6290615 (F1Score) 銅メダル</p>
+          <div className="Works-body-container">
+            <img src={mitsubishi} alt="sigante" className="mitsubishi-image"></img>
+            <a href="https://nlp100.github.io/ja/" >
+              <p className="works-p">MUFG Data Science Champion Ship 2023</p>
+            </a>
+            <p>SiganteのCompetition<br></br><br></br>
+            タスク内容 - クレジットカードの顧客登録情報や決済手段・利用場所といった<br></br>定量及び定性データを元に分析モデルを構築して、カード不正利用を二値分類
+            </p><br></br>
+            <p>Model - <a  href="https://github.com/yugonojima/NLP100Exercise-Chapter10">Stacking</a> ( layer_1: XGBoost, RandomForest, NN, KNeighbors, logistic_Regression, RGF<br></br>
+            layer_2: XGBoost,RandomForest, NN<br></br>
+            layer_3: logistic_Regression , XGBoost)
+            </p><br></br>
+            <p>最終評価 - 0.6290615 (F1Score) 銅メダル</p>
           </div>
 
           <div className="works-title">

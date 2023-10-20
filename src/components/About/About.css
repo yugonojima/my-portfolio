@@ -130,7 +130,7 @@ p {
   font-size: 160%;
   background-color:plum;
   margin:14% auto -12%;
-  width:30%;
+  width:200px;
 }
 
 .Qualification-icons {
@@ -193,7 +193,7 @@ p {
   font-size: 160%;
   background-color:orange;
   margin:14% auto -12%;
-  width:30%;
+  width:200px;
 }
 
 .Front-end-icons {
@@ -212,7 +212,7 @@ p {
   font-size: 160%;
   background-color:skyblue;
   margin:14% auto -12%;
-  width:30%;
+  width: 200px;
 }
 
 .Back-end-icons {
@@ -250,3 +250,29 @@ p {
   top: 280px;
 }
 
+@media screen and (max-width: 1420px) {
+  .picture-container {
+    z-index: 1;
+    bottom: 200px;
+  }
+  .picture5 {
+    left: 0;
+    top: 170px;
+  }
+
+  .picture6 {
+    top: 340px;
+  }
+}
+
+@media screen and (max-width: 1270px) {
+  .picture4,
+  .picture5,
+  .picture6 {
+    display: none;
+  }
+  .About-body-text {
+    width: 70%;
+    margin: 120px auto;
+  }
+}

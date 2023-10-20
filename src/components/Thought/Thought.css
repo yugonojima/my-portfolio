@@ -7,9 +7,9 @@
   background-color: #ffffff;
 }
 
-.Thought-container1 {
-  text-align: center;
-}
+/* .Thought-container1 {
+
+} */
 
 .Thought-body-title {
   margin: 0 auto ;
@@ -28,4 +28,10 @@
 
 .Thought-body-text {
   margin: 100px 0;
+}
+
+@media screen and (max-width: 1130px) {
+  .Thought-container1 {
+    width: 70%;
+  }
 }

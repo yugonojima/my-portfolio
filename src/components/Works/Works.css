@@ -17,9 +17,7 @@ img {
   margin-top: 60px;
 }
 
-.Works-body-container > p {
-  margin-bottom: 60px;
-}
+
 
 .works-p {
   margin-top: 2rem;
@@ -58,4 +56,19 @@ img {
 
 .works-title {
   margin-top: 100px;
+}
+
+@media screen and (max-width : 700px) {
+  .Works-body-container > p {
+    width: 70%;
+    margin:auto;
+  }
+}
+
+@media screen and (max-width : 530px) {
+  .nlp-image,
+  .mitsubishi-image {
+    height: 210px;
+    width: 300px;
+  }
 }

@@ -13,30 +13,57 @@ const Header = () => {
 
   return (
     <div className="header">
-      <div className="header-left">
+      <div className="header-1">
+        <Router>
+          <Link to="/" style={{ textDecoration: "none" }}>
+            <Button variant="outlined" color="secondary">
+              TOP
+            </Button>
+          </Link>
+          <Link to="About" style={{ textDecoration: "none" }}>
+            <Button variant="outlined" color="secondary">
+              About
+            </Button>
+          </Link>
+          <Link to="Thought" style={{ textDecoration: "none" }}>
+            <Button variant="outlined" color="secondary">
+              Thought
+            </Button>
+          </Link>
+          <Link to="Works" style={{ textDecoration: "none" }}>
+            <Button variant="outlined" color="secondary">
+              Works
+            </Button>
+          </Link>
+          <Link to="Contact" style={{ textDecoration: "none" }}>
+            <Button variant="outlined" color="secondary">
+              Contact
+            </Button>
+          </Link>
+          </Router>
+      </div>
+
+      <div className="header-2">
         <label
           htmlFor="menu"
           className={checked ? "none-menu" : "open"}
           onClick={() => {
             setChecked(true);
-          }}
-        >
+          }}>
           <DehazeIcon style={{ fontSize: 40 }}></DehazeIcon>
         </label>
         {/* メニュー */}
-        <div className={checked ? "menu-appear" : "menu-container"}>
-          <div className="menus1">
+        <div className={checked ? "appeared-menu" : "disappeard-menu"}>
             <label
               type="button"
               htmlFor="menu"
               className="close"
-              onClick={() => setChecked(false)}
-            >
+              onClick={() => setChecked(false)}>
               ✖︎
             </label>
-            <div className="menus2">
+            <div className="header2-menus">
               <Router>
-                <Link to="/" style={{ textDecoration: "none" }}>
+                <Link to="/" style={{ textDecoration: "none" }} onClick={removeChecked}>
                   <div className="menu" onClick={removeChecked}>
                     TOP
                   </div>
@@ -66,36 +93,6 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className="header-right">
-        <Router>
-          <Link to="/" style={{ textDecoration: "none" }}>
-            <Button variant="outlined" color="secondary">
-              TOP
-            </Button>
-          </Link>
-          <Link to="About" style={{ textDecoration: "none" }}>
-            <Button variant="outlined" color="secondary">
-              About
-            </Button>
-          </Link>
-          <Link to="Thought" style={{ textDecoration: "none" }}>
-            <Button variant="outlined" color="secondary">
-              Thought
-            </Button>
-          </Link>
-          <Link to="Works" style={{ textDecoration: "none" }}>
-            <Button variant="outlined" color="secondary">
-              Works
-            </Button>
-          </Link>
-          <Link to="Contact" style={{ textDecoration: "none" }}>
-            <Button variant="outlined" color="secondary">
-              Contact
-            </Button>
-          </Link>
-          </Router>
-      </div>
-    </div>
   );
 };
 

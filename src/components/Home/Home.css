@@ -165,11 +165,14 @@
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1130px) {
   .picture1,
   .picture2,
   .picture3 {
     display: none;
+  }
+  .Area-container {
+    width: 70%;
   }
 }
 

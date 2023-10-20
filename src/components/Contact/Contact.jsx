@@ -91,7 +91,7 @@ const Contact = ({ checked }) => {
             id="outlined-multiline-message"
             label="Message"
             multiline
-            rows={5}
+            rows={10}
             variant="outlined"
             fullWidth
             value={message}
